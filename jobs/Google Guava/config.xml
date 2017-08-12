@@ -37,8 +37,24 @@
     </hudson.tasks.Maven>
     <com.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.1.0-05">
       <nexusInstanceId>nexus</nexusInstanceId>
-      <nexusRepositoryId></nexusRepositoryId>
-      <packages/>
+      <nexusRepositoryId>releases</nexusRepositoryId>
+      <packages>
+        <com.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>org.jenkins-ci.main</groupId>
+            <artifactId>jenkins-jar</artifactId>
+            <version>1.0</version>
+            <packaging>jar</packaging>
+          </coordinate>
+          <assets>
+            <com.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>guava/target/guava-24.0-SNAPSHOT.jar</filePath>
+              <classifier></classifier>
+              <extension></extension>
+            </com.sonatype.nexus.ci.nxrm.MavenAsset>
+          </assets>
+        </com.sonatype.nexus.ci.nxrm.MavenPackage>
+      </packages>
     </com.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
   <publishers/>

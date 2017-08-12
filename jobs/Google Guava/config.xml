@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description>Google Guava</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -34,6 +35,11 @@
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
       <injectBuildVariables>false</injectBuildVariables>
     </hudson.tasks.Maven>
+    <com.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.1.0-05">
+      <nexusInstanceId>nexus</nexusInstanceId>
+      <nexusRepositoryId></nexusRepositoryId>
+      <packages/>
+    </com.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
   </builders>
   <publishers/>
   <buildWrappers/>

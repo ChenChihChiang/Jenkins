@@ -49,7 +49,7 @@
           </coordinate>
           <assets>
             <com.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>simple-project/target/simple-project-1.0.0-SNAPSHOT.jar</filePath>
+              <filePath>maven/simple-project/target/simple-project-1.0.0-SNAPSHOT.jar</filePath>
               <classifier></classifier>
               <extension></extension>
             </com.sonatype.nexus.ci.nxrm.MavenAsset>

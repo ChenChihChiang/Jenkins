@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -29,6 +30,7 @@
     <hudson.tasks.Maven>
       <targets>clean install -V -B</targets>
       <mavenName>localMaven</mavenName>
+      <pom>maven/simple-project/pom.xml</pom>
       <usePrivateRepository>false</usePrivateRepository>
       <settings class="jenkins.mvn.DefaultSettingsProvider"/>
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
@@ -40,7 +42,7 @@
       <packages>
         <com.sonatype.nexus.ci.nxrm.MavenPackage>
           <coordinate>
-            <groupId>org.jenkins-ci.main</groupId>
+            <groupId>org.jenkins.main</groupId>
             <artifactId>jenkins-war</artifactId>
             <version>1.0</version>
             <packaging>war</packaging>

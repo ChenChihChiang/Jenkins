@@ -45,11 +45,11 @@
             <groupId>org.jenkins.main</groupId>
             <artifactId>jenkins-war</artifactId>
             <version>1.0</version>
-            <packaging>war</packaging>
+            <packaging>jar</packaging>
           </coordinate>
           <assets>
             <com.sonatype.nexus.ci.nxrm.MavenAsset>
-              <filePath>war/target/jenkins.war</filePath>
+              <filePath>simple-project/target/simple-project-1.0.0-SNAPSHOT.jar</filePath>
               <classifier></classifier>
               <extension></extension>
             </com.sonatype.nexus.ci.nxrm.MavenAsset>

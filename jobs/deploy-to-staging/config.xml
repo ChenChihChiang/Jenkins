@@ -26,11 +26,10 @@
       <configs/>
       <downstreamProjectNames>deploy-to-prod</downstreamProjectNames>
     </au.com.centrumsystems.hudson.plugin.buildpipeline.trigger.BuildPipelineTrigger>
-    <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.10">
+    <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
       <adapters>
         <hudson.plugins.deploy.tomcat.Tomcat7xAdapter>
-          <userName>tomcat</userName>
-          <passwordScrambled>dG9tY2F0</passwordScrambled>
+          <credentialsId>eb96b0bc-1243-4ce0-b3a2-7d626401b494</credentialsId>
           <url>http://localhost:8090</url>
         </hudson.plugins.deploy.tomcat.Tomcat7xAdapter>
       </adapters>

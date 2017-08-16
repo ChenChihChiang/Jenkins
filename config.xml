@@ -70,13 +70,13 @@
       <role name="user" pattern=".*">
         <permissions>
           <permission>hudson.model.Hudson.Read</permission>
+          <permission>hudson.model.Item.Read</permission>
         </permissions>
         <assignedSIDs>
           <sid>john</sid>
         </assignedSIDs>
       </role>
     </roleMap>
-    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>

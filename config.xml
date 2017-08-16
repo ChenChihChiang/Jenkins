@@ -24,7 +24,7 @@
           <permission>hudson.model.Run.Update</permission>
         </permissions>
         <assignedSIDs>
-          <sid>john</sid>
+          <sid>johnchen</sid>
         </assignedSIDs>
       </role>
     </roleMap>
@@ -73,10 +73,11 @@
           <permission>hudson.model.Item.Read</permission>
         </permissions>
         <assignedSIDs>
-          <sid>john</sid>
+          <sid>johnchen</sid>
         </assignedSIDs>
       </role>
     </roleMap>
+    <roleMap type="slaveRoles"/>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>
